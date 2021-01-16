@@ -1,4 +1,5 @@
 import os
+import json
 from flask import Flask, render_template
 
 
@@ -10,14 +11,12 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/projects")
+@app.route("/projects/")
 def projects():
-    return render_template("projects.html")
-
-
-@app.route('/hello')
-def hello():
-    return 'Hello, World'
+    data = []
+    with open("data/portfolio.json", "r") as json_data:
+        data = json.load(json_data)
+    return render_template("projects.html", page_title="Portf", projects=data)
 
 
 if __name__ == "__main__":

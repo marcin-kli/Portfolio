@@ -6,25 +6,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" type="text/css">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"  type="text/css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/simple-line-icons/css/simple-line-icons.css') }}" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylish-portfolio.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylish-portfolio.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='adipoli/adipoli.css') }}"  type="text/css"/>
     
     <title>Portfolio</title>
 </head>
 <body id="page-top">
-    <!-- <nav class="navbar">
-        <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-        </ul>
-    </nav> -->
+   
  <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
     <i class="fas fa-bars"></i>
@@ -65,12 +62,9 @@
   </header>
 
   <!-- Main Content-->
-  <!-- <div class="container"></div> -->
 
     {% block content %}
     {% endblock %}
-
-  <!-- </div> -->
 
   <!-- Footer -->
   <footer class="footer text-center">
@@ -78,12 +72,12 @@
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
           <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-facebook"></i>
+            <i class="icon-speedometer"></i>
           </a>
         </li>
         <li class="list-inline-item">
           <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-twitter"></i>
+            <i class="icon-diamond"></i>
           </a>
         </li>
         <li class="list-inline-item">
@@ -115,5 +109,15 @@
       $("#copyright").text(new Date().getFullYear());
   </script>
 
+    <!-- Adipoli Plugin -->
+    
+    <script src="{{ url_for('static', filename='adipoli/jquery.adipoli.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='adipoli/jquery.adipoli.min.js') }}" type="text/javascript"></script>
+    <script> 
+        $("#img-adipoli").adipoli({
+            'startEffect': 'grayscale',
+            'hoverEffect': 'sliceDownLeft',
+            'animSpeed': 150,});
+    </script>
 </body>
 </html>
