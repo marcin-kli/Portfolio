@@ -1,16 +1,18 @@
 [
     {
-        "name": "Stationary",
-        "description": "A yellow pencil with envelopes on a clean, blue backdrop!",
-        "image": "../static/img/portfolio-1.jpg",
-        "id": "img-adipoli"
-        
+        "name": "Earthquakes",
+        "description": "Second milestone project in Code Institute",
+        "image": "https://raw.githubusercontent.com/marcin-kli/MP2/Milestone-Projects/md_data/screenshots/main_page_screenshot.png",
+        "date": "January 2021",
+        "url": "https://marcin-kli.github.io/MP2/"
     },
     {
-        "name": "Ice Cream",
-        "description": "A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!",
-        "image": "../static/img/portfolio-2.jpg",
-        "id": "img-adipoli"
+        "name": "Annie's Portfolio",
+        "description": "First milestone project in Code Institute",
+        "image": "https://raw.githubusercontent.com/marcin-kli/MP1/Milestone-Projects/md_images/screenshots/home_1.png",
+        "date": "December 2020",
+        "url": "https://marcin-kli.github.io/MP1/"
+        
     },
     {
         "name": "Strawberries",

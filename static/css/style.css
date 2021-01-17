@@ -1,0 +1,37 @@
+a:hover{
+    text-decoration: none;
+}
+
+.masthead{
+    height: 50vh;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: url("../img/bg-head-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.masthead a h1, a:hover{
+    text-decoration: none;
+
+    color: #bee3db;
+}
+
+.masthead h3{
+    font-size: 120%;
+    color: #f0f0f0f0;
+    background-color: rgba(52, 58, 64, 0.5);
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+@media (min-width: 992px) {
+    .masthead {
+        height: 50vh;
+    }
+    .masthead h3{
+        margin-left: 20vw;
+        margin-right: 20vw;
+     }
+}
